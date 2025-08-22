@@ -56,7 +56,7 @@ pub fn set_file_extensions(base_dir: PathBuf) -> [PathBuf; 3] {
     let mut file_stories_name_path = base_dir.clone();
     file_stories_name_path.set_extension("stories.tsx");
 
-    [file_name_path, file_stories_name_path, file_mocks_name_path]
+    [file_name_path, file_mocks_name_path, file_stories_name_path]
 }
 
 pub fn set_component_name(args: String) -> String {
