@@ -51,10 +51,10 @@ pub fn parse_cli() -> CLIArgs {
 pub fn set_file_extensions(base_dir: PathBuf) -> [PathBuf; 3] {
     let mut file_name_path = base_dir.clone();
     file_name_path.set_extension("tsx");
-    let mut file_stories_name_path = base_dir.clone();
-    file_stories_name_path.set_extension("stories.tsx");
     let mut file_mocks_name_path = base_dir.clone();
     file_mocks_name_path.set_extension("mocks.ts");
+    let mut file_stories_name_path = base_dir.clone();
+    file_stories_name_path.set_extension("stories.tsx");
 
     [file_name_path, file_stories_name_path, file_mocks_name_path]
 }
